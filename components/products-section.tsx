@@ -40,6 +40,7 @@ export function ProductsSection({ onOpenDownloadModal }: ProductsSectionProps) {
                     "Beautiful, intuitive interface for easy navigation",
                     "Real-time market data and portfolio tracking",
                     "Secure transactions verified by Zafeguard Vault",
+                    "Cross-platform synchronization across all your devices",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#FF3C00] flex-shrink-0 mt-0.5" />

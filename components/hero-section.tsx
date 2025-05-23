@@ -2,19 +2,36 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Shield, Download } from "lucide-react"
+import { TypewriterEffect } from "./typewriter-effect"
 
 interface HeroSectionProps {
   onOpenDownloadModal: () => void
 }
 
 export function HeroSection({ onOpenDownloadModal }: HeroSectionProps) {
+  const typewriterMessages = [
+    "Secure your crypto with next-generation MPC technology.",
+    "Split your keys across multiple devices for ultimate protection.",
+    "No single point of failure means your assets stay safe.",
+    "Experience security without sacrificing convenience.",
+    "Join thousands of users who trust Zafeguard with their digital assets.",
+  ]
+
   return (
     <section className="py-20 md:py-32 bg-gradient-to-br from-[#121212] to-[#1E1E1E] relative overflow-hidden">
+      {/* Enhanced Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[url('/images/grid-pattern.png')] opacity-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-radial from-[#FF3C00]/10 via-transparent to-transparent opacity-40"></div>
+        <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-radial from-[#001E59]/10 via-transparent to-transparent opacity-40"></div>
+      </div>
+
       <div className="absolute inset-0 parallax-bg" data-speed="0.1">
         <div className="absolute top-20 left-10 w-32 h-32 bg-[#FF3C00]/10 rounded-full blur-3xl float-animation"></div>
         <div className="absolute bottom-20 right-10 w-48 h-48 bg-[#FF3C00]/5 rounded-full blur-3xl float-animation-delayed"></div>
       </div>
-      <div className="container px-6 relative">
+
+      <div className="container px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4 scroll-animate">
             <p className="text-gray-400 text-lg">Next-generation crypto security with MPC technology</p>
@@ -26,6 +43,9 @@ export function HeroSection({ onOpenDownloadModal }: HeroSectionProps) {
               <br />
               fortress awaits
             </h1>
+
+            {/* Typewriter Effect */}
+            <TypewriterEffect messages={typewriterMessages} />
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 scroll-animate">

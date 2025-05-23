@@ -124,10 +124,10 @@ body {
   transition: transform 0.1s ease-out;
 }
 
-/* Ultra smooth hover animations for position changes */
+/* Improved button hover animations with 0.5s duration */
 .hover-lift {
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s
-    cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   will-change: transform;
 }
 
@@ -138,34 +138,34 @@ body {
 
 /* Smoother transitions for all interactive elements */
 .transition-colors {
-  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Smoother button hover effects */
 button {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Smoother group hover transitions */
 .group:hover .group-hover\:opacity-100 {
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Smoother background transitions */
 .hover\:bg-\[\#1E1E1E\]:hover,
 .hover\:bg-\[\#CC3000\]:hover,
 .hover\:bg-\[\#FF3C00\]\/10:hover {
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Smoother border transitions */
 .hover\:border-\[\#FF3C00\]\/50:hover {
-  transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Enhanced card hover effects */
 .card-hover {
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   will-change: transform, box-shadow;
 }
 
@@ -246,4 +246,24 @@ html {
 
 .text-reveal.animate-in span {
   transform: translateY(0);
+}
+
+/* Background gradient utilities */
+.bg-gradient-radial {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* Typewriter cursor animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor {
+  animation: blink 1s step-end infinite;
 }

@@ -83,6 +83,7 @@ export function ProductsSection({ onOpenDownloadModal }: ProductsSectionProps) {
                     "Create and recover private keys with recovery phrases",
                     "Authorize transactions from Zafeguard Wallet",
                     "Distribute key shares across multiple devices for enhanced security",
+                    "Advanced security monitoring and suspicious activity alerts",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#FF3C00] flex-shrink-0 mt-0.5" />

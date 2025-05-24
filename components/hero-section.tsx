@@ -26,9 +26,14 @@ export function HeroSection({ onOpenDownloadModal }: HeroSectionProps) {
         <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-radial from-[#001E59]/10 via-transparent to-transparent opacity-40"></div>
       </div>
 
-      <div className="absolute inset-0 parallax-bg" data-speed="0.1">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-[#FF3C00]/10 rounded-full blur-3xl float-animation"></div>
-        <div className="absolute bottom-20 right-10 w-48 h-48 bg-[#FF3C00]/5 rounded-full blur-3xl float-animation-delayed"></div>
+      <div className="absolute inset-0" data-speed="0.1">
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `url('/images/crypto-circuit-background.png')`,
+            backgroundSize: "cover",
+          }}
+        ></div>
       </div>
 
       <div className="container px-6 relative z-10">

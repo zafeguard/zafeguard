@@ -171,7 +171,7 @@ export default function About() {
                 <p className="text-center text-gray-400 mb-4">
                   Have questions about our technology or want to learn more about MPC?
                 </p>
-                <div className="flex flex-col gap-4 justify-center">
+                <div className="flex flex-col md:flex-row gap-4 justify-center">
                   <Link href="/how-mpc-works" className="w-full">
                     <Button className="bg-[#FF3C00] hover:bg-[#CC3000] text-white rounded-full px-6 py-2 w-full transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                       Learn About MPC

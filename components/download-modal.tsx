@@ -17,7 +17,7 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
       <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
 
       {/* Modal */}
-      <div className="relative bg-[#1E1E1E] rounded-3xl p-8 max-w-2xl w-full mx-4 border border-[#2A2A2A] shadow-2xl">
+      <div className="relative bg-[#1E1E1E] rounded-3xl p-8 max-w-2xl w-full mx-4 border border-[#2A2A2A] shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Close button */}
         <button onClick={onClose} className="absolute top-6 right-6 text-gray-400 hover:text-white transition-colors">
           <X className="w-6 h-6" />

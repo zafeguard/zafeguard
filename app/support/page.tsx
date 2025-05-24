@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Mail, MessageCircle, Book } from "lucide-react"
+import { ArrowLeft, Mail, Book } from "lucide-react"
 
 export default function Support() {
   return (
@@ -18,7 +18,7 @@ export default function Support() {
             <p className="text-gray-400">Get help with Zafeguard Wallet and Vault</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-[#1E1E1E] rounded-2xl p-6 border border-[#2A2A2A]">
               <Mail className="w-8 h-8 text-[#FF3C00] mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">Email Support</h3>
@@ -27,20 +27,11 @@ export default function Support() {
             </div>
 
             <div className="bg-[#1E1E1E] rounded-2xl p-6 border border-[#2A2A2A]">
-              <MessageCircle className="w-8 h-8 text-[#FF3C00] mb-4" />
-              <h3 className="text-lg font-bold text-white mb-2">Live Chat</h3>
-              <p className="text-gray-400 text-sm mb-4">Chat with our support team</p>
-              <Button variant="outline" className="w-full border-[#FF3C00] text-[#FF3C00]">
-                Start Chat
-              </Button>
-            </div>
-
-            <div className="bg-[#1E1E1E] rounded-2xl p-6 border border-[#2A2A2A]">
               <Book className="w-8 h-8 text-[#FF3C00] mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">Documentation</h3>
               <p className="text-gray-400 text-sm mb-4">Browse our help articles</p>
-              <Button variant="outline" className="w-full border-[#FF3C00] text-[#FF3C00]">
-                View Docs
+              <Button variant="outline" className="w-full border-gray-600 text-gray-500 cursor-not-allowed" disabled>
+                Coming Soon
               </Button>
             </div>
           </div>

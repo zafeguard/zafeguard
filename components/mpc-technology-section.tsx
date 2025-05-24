@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function MpcTechnologySection() {
   return (
@@ -56,9 +57,11 @@ export function MpcTechnologySection() {
                 ))}
               </div>
 
-              <Button className="bg-[#FF3C00] hover:bg-[#CC3000] text-white rounded-full px-6 py-3 hover-lift">
-                Learn more about MPC
-              </Button>
+              <Link href="/how-mpc-works">
+                <Button className="bg-[#FF3C00] hover:bg-[#CC3000] text-white rounded-full px-6 py-3 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                  Learn more about MPC
+                </Button>
+              </Link>
             </div>
 
             <div className="relative scroll-animate">

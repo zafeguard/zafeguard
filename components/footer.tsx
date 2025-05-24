@@ -52,7 +52,7 @@ export function Footer() {
               <Link href="/contact" className="text-gray-400 hover:text-[#FF3C00] transition-colors">
                 Contact
               </Link>
-              <Link href="#enterprise" className="text-gray-400 hover:text-[#FF3C00] transition-colors">
+              <Link href="/enterprise" className="text-gray-400 hover:text-[#FF3C00] transition-colors">
                 Enterprise
               </Link>
             </div>

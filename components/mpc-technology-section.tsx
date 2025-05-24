@@ -72,8 +72,8 @@ export function MpcTechnologySection() {
                 <Image
                   src="/images/mpc-diagram.png"
                   alt="MPC Technology Diagram"
-                  width={500}
-                  height={400}
+                  width={600}
+                  height={600}
                   className="w-full h-auto"
                 />
               </div>

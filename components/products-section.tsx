@@ -152,8 +152,8 @@ export function ProductsSection({ onOpenDownloadModal }: ProductsSectionProps) {
                 <Image
                   src="/images/wallet-vault-flow.png"
                   alt="Wallet and Vault Flow"
-                  width={500}
-                  height={400}
+                  width={600}
+                  height={600}
                   className="w-full h-auto"
                 />
               </div>

@@ -248,8 +248,8 @@ export default function Enterprise() {
             {/* Pricing */}
             <section>
               <h2 className="text-3xl font-bold text-white mb-8 text-center">Enterprise Pricing</h2>
-              <div className="max-w-2xl mx-auto">
-                <div className="bg-[#1E1E1E] rounded-2xl p-8 border border-[#FF3C00] relative text-center">
+              <div className="max-w-4xl mx-auto">
+                <div className="bg-[#1E1E1E] rounded-2xl p-8 md:p-12 border border-[#FF3C00] relative text-center">
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#FF3C00] text-white px-4 py-1 rounded-full text-sm font-medium">
                     Enterprise Solution
                   </div>
@@ -259,45 +259,50 @@ export default function Enterprise() {
                     Starting from $1,000<span className="text-lg text-gray-400">/month</span>
                   </div>
 
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                    <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
-                      <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Custom SDK</h4>
-                      <p className="text-gray-400 text-sm">
-                        Integrate MPC technology directly into your applications with our comprehensive SDK
-                      </p>
+                  <div className="space-y-6 mb-8">
+                    {/* First row - 2 columns */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
+                        <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Custom SDK</h4>
+                        <p className="text-gray-400 text-sm">
+                          Integrate MPC technology directly into your applications with our comprehensive SDK
+                        </p>
+                      </div>
+                      <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
+                        <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Fully Offline</h4>
+                        <p className="text-gray-400 text-sm">
+                          Air-gapped deployment options for maximum security in isolated environments
+                        </p>
+                      </div>
                     </div>
-                    <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
-                      <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Fully Offline</h4>
-                      <p className="text-gray-400 text-sm">
-                        Air-gapped deployment options for maximum security in isolated environments
-                      </p>
+
+                    {/* Second row - 2 columns */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
+                        <h4 className="text-lg font-bold text-[#FF3C00] mb-3">MPC Nodes & API</h4>
+                        <p className="text-gray-400 text-sm">
+                          Easy to integrate with an API to your existing application. Dynamic nodes configuration with
+                          dedicated MPC infrastructure
+                        </p>
+                      </div>
+                      <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
+                        <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Key Backup</h4>
+                        <p className="text-gray-400 text-sm">
+                          Secure key backup and recovery solutions with enterprise-grade redundancy and disaster
+                          recovery
+                        </p>
+                      </div>
                     </div>
-                    <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
-                      <h4 className="text-lg font-bold text-[#FF3C00] mb-3">MPC Nodes & API</h4>
-                      <p className="text-gray-400 text-sm">
-                        Easy to integrate with an API to your existing application. Dynamic nodes configuration with
-                        dedicated MPC infrastructure
-                      </p>
-                    </div>
-                    <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
-                      <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Key Backup</h4>
-                      <p className="text-gray-400 text-sm">
-                        Secure key backup and recovery solutions with enterprise-grade redundancy and disaster recovery
-                      </p>
-                    </div>
-                    <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
-                      <h4 className="text-lg font-bold text-[#FF3C00] mb-3">24/7 Enterprise Support</h4>
-                      <p className="text-gray-400 text-sm">
-                        Dedicated support team with guaranteed response times, white-glove onboarding, and ongoing
-                        technical assistance
-                      </p>
-                    </div>
-                    <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
-                      <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Software & Library Updates</h4>
-                      <p className="text-gray-400 text-sm">
-                        Regular software and library updates with enhanced security options, new cryptographic features,
-                        and cutting-edge MPC protocol improvements
-                      </p>
+
+                    {/* Third row - 1 column */}
+                    <div className="grid grid-cols-1 gap-6">
+                      <div className="bg-[#121212] rounded-xl p-4 border border-[#2A2A2A]">
+                        <h4 className="text-lg font-bold text-[#FF3C00] mb-3">Software & Library Updates</h4>
+                        <p className="text-gray-400 text-sm">
+                          Regular software and library updates with enhanced security options, new cryptographic
+                          features, and cutting-edge MPC protocol improvements
+                        </p>
+                      </div>
                     </div>
                   </div>
 

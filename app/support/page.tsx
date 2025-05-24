@@ -1,8 +1,14 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Mail, Book } from "lucide-react"
+import { ContactModal } from "@/components/contact-modal"
 
 export default function Support() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-[#121212] text-white">
       <div className="container mx-auto px-6 py-12">
@@ -23,7 +29,9 @@ export default function Support() {
               <Mail className="w-8 h-8 text-[#FF3C00] mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">Email Support</h3>
               <p className="text-gray-400 text-sm mb-4">Get help via email within 24 hours</p>
-              <Button className="w-full bg-[#FF3C00] hover:bg-[#CC3000]">Contact Support</Button>
+              <Button onClick={() => setIsContactModalOpen(true)} className="w-full bg-[#FF3C00] hover:bg-[#CC3000]">
+                Contact Support
+              </Button>
             </div>
 
             <div className="bg-[#1E1E1E] rounded-2xl p-6 border border-[#2A2A2A]">
@@ -81,6 +89,7 @@ export default function Support() {
           </div>
         </div>
       </div>
+      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </div>
   )
 }

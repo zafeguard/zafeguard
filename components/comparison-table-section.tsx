@@ -21,15 +21,15 @@ export function ComparisonTableSection() {
                 <tr>
                   <th className="p-4 text-left text-gray-400 font-normal border-b border-[#2A2A2A]">Feature</th>
                   <th className="p-4 text-center border-b border-[#2A2A2A]">
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-row gap-2 items-center justify-center">
                       <Image
-                        src="/images/zafeguard-logo.png"
+                        src="/icon.png"
                         alt="Zafeguard"
                         width={32}
                         height={32}
-                        className="h-8 w-8 mb-2"
+                        className="h-8 w-8"
                       />
-                      <span className="text-white font-bold">Zafeguard</span>
+                      <div className="text-white font-bold h-full">ZAFEGUARD</div>
                     </div>
                   </th>
                   <th className="p-4 text-center text-gray-400 border-b border-[#2A2A2A]">

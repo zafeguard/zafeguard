@@ -17,7 +17,7 @@ export function Header({ onOpenDownloadModal }: HeaderProps) {
     <header className="sticky top-0 z-40 w-full bg-[#121212]/80 backdrop-blur-sm border-b border-[#1E1E1E]">
       <div className="container flex h-16 items-center justify-between px-6">
         <div className="flex items-center gap-2">
-          <Image src="/images/zafeguard-logo.png" alt="Zafeguard Logo" width={32} height={32} className="h-8 w-8" />
+          <Image src="/icon.png" alt="Zafeguard Logo" width={32} height={32} className="h-8 w-8" />
           <span className="text-xl font-bold text-white">Zafeguard</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">

@@ -20,7 +20,7 @@ export function Footer() {
               <Link href="#" className="text-gray-500 hover:text-[#FF3C00] transition-colors">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-[#FF3C00] transition-colors">
+              <Link href="https://github.com/zafeguard" className="text-gray-500 hover:text-[#FF3C00] transition-colors">
                 <Github className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-gray-500 hover:text-[#FF3C00] transition-colors">

@@ -26,7 +26,7 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Image src="/images/zafeguard-logo.png" alt="Zafeguard Logo" width={32} height={32} className="h-8 w-8" />
+            <Image src="/icon.png" alt="Zafeguard Logo" width={32} height={32} className="h-8 w-8" />
             <span className="text-xl font-bold text-white">Zafeguard</span>
           </div>
           <h2 className="text-2xl font-bold text-white mb-2">Choose Your Platform</h2>

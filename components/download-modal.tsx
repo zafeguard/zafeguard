@@ -49,15 +49,19 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
 
             <div className="space-y-3">
               <Button className="w-full bg-[#FF3C00] hover:bg-[#CC3000] text-white rounded-xl py-3 flex items-center gap-2">
-                <Image src="/images/google-play-icon.png" alt="Google Play" width={20} height={20} />
-                Download Wallet
+                <Image src="/images/android-light.svg" alt="Google Play" width={20} height={20} />
+                <span className="flex-1">
+                  Download Wallet
+                </span>
               </Button>
               <Button
                 variant="outline"
                 className="w-full border-[#FF3C00] text-[#FF3C00] hover:bg-[#FF3C00]/10 rounded-xl py-3 flex items-center gap-2"
               >
-                <Image src="/images/google-play-icon.png" alt="Google Play" width={20} height={20} />
-                Download Vault
+                <Image src="/images/android-light.svg" alt="Google Play" width={20} height={20} />
+                <span className="flex-1">
+                  Download Vault
+                </span>
               </Button>
             </div>
           </div>
@@ -76,15 +80,19 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
 
             <div className="space-y-3">
               <Button className="w-full bg-[#FF3C00] hover:bg-[#CC3000] text-white rounded-xl py-3 flex items-center gap-2">
-                <Image src="/images/app-store-icon.png" alt="App Store" width={20} height={20} />
-                Download Wallet
+                <Image src="/images/apple-light.svg" alt="App Store" width={20} height={20} />
+                <span className="flex-1">
+                  Download Wallet
+                </span>
               </Button>
               <Button
                 variant="outline"
                 className="w-full border-[#FF3C00] text-[#FF3C00] hover:bg-[#FF3C00]/10 rounded-xl py-3 flex items-center gap-2"
               >
-                <Image src="/images/app-store-icon.png" alt="App Store" width={20} height={20} />
-                Download Vault
+                <Image src="/images/apple-light.svg" alt="App Store" width={20} height={20} />
+                <span className="flex-1">
+                  Download Vault
+                </span>
               </Button>
             </div>
           </div>

@@ -2,6 +2,7 @@ import type React from "react"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Zafeguard - Next-Gen Crypto Wallet with MPC Technology",
@@ -24,6 +25,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

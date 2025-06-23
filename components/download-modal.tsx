@@ -30,6 +30,7 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
             <span className="text-xl font-bold text-white">Zafeguard</span>
           </div>
           <h2 className="text-2xl font-bold text-white mb-2">Choose Your Platform</h2>
+          <div className="text-gray-400 italic text-sm">Be the first to experience the <b>beta version</b>!</div>
           <p className="text-gray-400">Download both Zafeguard Wallet and Vault for maximum security</p>
         </div>
 
@@ -42,7 +43,10 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
                 <Smartphone className="w-6 h-6 text-green-500" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white">Android</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-bold text-white">Android</h3>
+                  <b className="text-xs bg-blue-600 px-1 rounded-sm">BETA</b>
+                </div>
                 <p className="text-sm text-gray-400">Google Play Store</p>
               </div>
             </div>
@@ -73,7 +77,10 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
                 <Smartphone className="w-6 h-6 text-blue-500" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white">iOS</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-bold text-white">iOS</h3>
+                  <b className="text-xs bg-blue-600 px-1 rounded-sm">BETA</b>
+                </div>
                 <p className="text-sm text-gray-400">App Store</p>
               </div>
             </div>

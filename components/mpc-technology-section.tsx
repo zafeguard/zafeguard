@@ -58,7 +58,7 @@ export function MpcTechnologySection() {
               </div>
 
               <Link href="/how-mpc-works">
-                <Button className="bg-[#FF3C00] hover:bg-[#CC3000] text-white rounded-full px-6 py-3 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                <Button className="bg-[#FF3C00] hover:bg-[#CC3000] text-white rounded-full px-6 py-3 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg mt-6">
                   Learn more about MPC
                 </Button>
               </Link>
